@@ -6,7 +6,7 @@ group = 'com.github.jinghuichou'
 sourceCompatibility = JavaVersion.VERSION_1_7
 targetCompatibility = JavaVersion.VERSION_1_7
 dependencies {
-    implementation project (':permission-annotation')
+    implementation 'com.github.jinghuichou.MPermissions:permission-annotation:1.0.0'
     implementation 'com.google.auto.service:auto-service:1.0-rc2'
     annotationProcessor 'com.google.auto.service:auto-service:1.0-rc2'
     implementation 'com.squareup:javapoet:1.10.0'
