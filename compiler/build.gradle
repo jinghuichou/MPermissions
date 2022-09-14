@@ -1,4 +1,7 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.github.zhouhui'
 
 android {
     compileSdkVersion 32
@@ -12,15 +15,3 @@ dependencies {
     annotationProcessor 'com.google.auto.service:auto-service:1.0-rc2'
     implementation 'com.squareup:javapoet:1.10.0'
 }
-
-//publish {
-//    artifactId = 'mpermission-compiler'
-//    userOrg = rootProject.userOrg
-//    groupId = rootProject.groupId
-//    uploadName = rootProject.uploadName
-//    publishVersion = rootProject.publishVersion
-//    description = rootProject.description
-//    website = rootProject.website
-//    licences = rootProject.licences
-//}
-

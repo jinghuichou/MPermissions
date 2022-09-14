@@ -1,4 +1,8 @@
 apply plugin: 'java'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group 'com.github.zhouhui'
+
 sourceCompatibility = JavaVersion.VERSION_1_7
 targetCompatibility = JavaVersion.VERSION_1_7
 

@@ -1,4 +1,7 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.github.zhouhui'
 
 android {
     compileSdkVersion 28
@@ -41,8 +44,6 @@ task androidJar(type: Jar) {
 
 }
 
-
-
 // javadoc tasks
 android.libraryVariants.all { variant ->
     task("javadoc${variant.name.capitalize()}", type: Javadoc) {
@@ -55,18 +56,6 @@ android.libraryVariants.all { variant ->
         exclude '**/R.java'
     }
 }
-
-
-//publish {
-//    artifactId = 'mpermission-api'
-//    userOrg = rootProject.userOrg
-//    groupId = rootProject.groupId
-//    uploadName = rootProject.uploadName
-//    publishVersion = rootProject.publishVersion
-//    description = rootProject.description
-//    website = rootProject.website
-//    licences = rootProject.licences
-//}
 
 task copyJar(type: Copy) {
     from('build/libs/permission-lib.jar')
