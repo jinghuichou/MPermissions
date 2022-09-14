@@ -1,16 +1,12 @@
-apply plugin: 'com.android.library'
+apply plugin: 'java'
 apply plugin: 'com.github.dcendents.android-maven'
 
-group = 'com.github.zhouhui'
-
-android {
-    compileSdkVersion 32
-}
+group = 'com.github.jinghuichou'
 
 sourceCompatibility = JavaVersion.VERSION_1_7
 targetCompatibility = JavaVersion.VERSION_1_7
 dependencies {
-    api project (':permission-annotation')
+    implementation project (':permission-annotation')
     implementation 'com.google.auto.service:auto-service:1.0-rc2'
     annotationProcessor 'com.google.auto.service:auto-service:1.0-rc2'
     implementation 'com.squareup:javapoet:1.10.0'
