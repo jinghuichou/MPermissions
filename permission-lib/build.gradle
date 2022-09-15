@@ -61,6 +61,11 @@ task copyJar(type: Copy) {
     rename ('permission-lib.jar', 'mpermissions.jar')
 }
 
+task generateSourcesJar(type: Jar){
+    from android.sourceSets.main.java.srcDirs
+    classifier  'sources'
+}
+
 afterEvaluate {
     publishing {
         publications {
