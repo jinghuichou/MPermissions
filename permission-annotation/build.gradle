@@ -1,10 +1,23 @@
 apply plugin: 'java'
-apply plugin: 'com.github.dcendents.android-maven'
-
-group 'com.github.jinghuichou'
+apply plugin: 'maven-publish'
 
 sourceCompatibility = JavaVersion.VERSION_1_7
 targetCompatibility = JavaVersion.VERSION_1_7
+
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                // Applies the component for the release build variant.
+                // You can then customize attributes of the publication as shown below.
+                groupId = 'mpermission-annotation'
+                artifactId = 'com.github.jinghuichou'
+                version = '1.0.0'
+            }
+        }
+    }
+}
 
 
 //publish {
