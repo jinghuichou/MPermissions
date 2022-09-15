@@ -1,1 +1,21 @@
-include ':compiler', ':permission-annotation', ':permission-lib', ':permission-sample'
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "MPermissions"
+include ':compiler'
+include ':permission-annotation'
+include ':permission-lib'
+include ':permission-sample'

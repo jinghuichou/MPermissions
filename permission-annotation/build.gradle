@@ -1,5 +1,7 @@
-apply plugin: 'java'
-apply plugin: 'maven-publish'
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
 
 sourceCompatibility = JavaVersion.VERSION_1_7
 targetCompatibility = JavaVersion.VERSION_1_7
@@ -11,6 +13,7 @@ afterEvaluate {
             release(MavenPublication) {
                 // Applies the component for the release build variant.
                 // You can then customize attributes of the publication as shown below.
+                from components.java
                 groupId = 'com.github.jinghuichou'
                 artifactId = 'mpermission-annotation'
                 version = '1.0.0'

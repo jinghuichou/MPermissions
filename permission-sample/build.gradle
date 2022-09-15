@@ -1,4 +1,6 @@
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+}
 
 android {
     compileSdkVersion 28
@@ -31,9 +33,9 @@ dependencies {
 //    implementation project(':permission-lib')
 //    annotationProcessor project(':compiler')
 
-//    implementation 'com.github.jinghuichou.MPermissions:permission-lib:1.0.1'//权限请求
-//    implementation 'com.github.jinghuichou.MPermissions:permission-annotation:1.0.1'//权限请求
-//    annotationProcessor 'com.github.jinghuichou.MPermissions:compiler:1.0.1'
+//    implementation 'com.github.jinghuichou.MPermissions:mpermission-api:1.0.0'//权限请求
+//    implementation 'com.github.jinghuichou.MPermissions:mpermission-annotation:1.0.0'//权限请求
+//    annotationProcessor 'com.github.jinghuichou.MPermissions:mpermission-compiler:1.0.0'
     implementation 'com.zhy:mpermission-compiler:1.0.1'
     annotationProcessor 'com.zhy:mpermission-compiler:1.0.1'
     implementation 'com.zhy:mpermission-annotation:1.0.1'

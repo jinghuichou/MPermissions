@@ -1,5 +1,7 @@
-apply plugin: 'com.android.library'
-apply plugin: 'maven-publish'
+plugins {
+    id 'com.android.library'
+    id 'maven-publish'
+}
 
 android {
     compileSdkVersion 28
@@ -71,6 +73,7 @@ afterEvaluate {
         publications {
             // Creates a Maven publication called "release".
             release(MavenPublication) {
+                from components.release
                 groupId = 'com.github.jinghuichou'
                 artifactId = 'mpermission-api'
                 version = '1.0.0'
