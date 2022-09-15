@@ -11,8 +11,8 @@ afterEvaluate {
             release(MavenPublication) {
                 // Applies the component for the release build variant.
                 // You can then customize attributes of the publication as shown below.
-                groupId = 'mpermission-annotation'
-                artifactId = 'com.github.jinghuichou'
+                groupId = 'com.github.jinghuichou'
+                artifactId = 'mpermission-annotation'
                 version = '1.0.0'
             }
         }

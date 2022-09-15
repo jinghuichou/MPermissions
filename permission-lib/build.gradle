@@ -71,8 +71,8 @@ afterEvaluate {
         publications {
             // Creates a Maven publication called "release".
             release(MavenPublication) {
-                groupId = 'mpermission-api'
-                artifactId = 'com.github.jinghuichou'
+                groupId = 'com.github.jinghuichou'
+                artifactId = 'mpermission-api'
                 version = '1.0.0'
             }
         }
